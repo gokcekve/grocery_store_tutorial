@@ -10,9 +10,10 @@
     - go index.html and open in browser
     - done your shopping operations and check db, orders will be viewed on db tables
     
-Rules:
+Basic Rules step by step:
         When you create a new x_dao.py;
-            - import it into server.py
+        
+            - import it into server.py            
             - connect it with sql in __main__ :     # connection = get_sql_connection()
             - in each function you create in a dao file;
                 * you need a cursor first     :     # cursor = connection.cursor()
@@ -26,7 +27,7 @@ Rules:
                         you have to commit the change to see in db them :   #  connection.commit()
                 * return response(for 1.case) or cursor(for 2.case)
 
--> for each function in dao file; connect the service in server.py file. (exception: order_dao / get_order_details())
+-> For each function in dao file; connect the service in server.py file. (exception: order_dao / get_order_details())
 
 Exercises will be done: 
 1. IDE error: no conenction with db ( + solved)
